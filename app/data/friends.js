@@ -3,3 +3,5 @@ var friends = [{
     photo: "",
     scores: []
 }];
+
+module.exports = friends;
