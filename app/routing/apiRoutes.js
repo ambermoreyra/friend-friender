@@ -26,7 +26,7 @@ module.exports = function(app) {
 		console.log(newFriend);
 
 		// Initialize a best friend score and an empty best friend
-		var matchScore = 40;
+		var matchScore = 41;
 		// When we first get the newFriend, we have no best friend to compare them to
 		var matchIndex = 0;
 
@@ -48,7 +48,8 @@ module.exports = function(app) {
 				matchScore = friendScore;
 			}
 		}
-
+		console.log(`match index: ${matchIndex}`);
+		console.log(`match score: ${matchScore}`);
 		console.log(friends[matchIndex]);
 		// After all that is done, push our new friend into the list
 		friends.push(newFriend);
